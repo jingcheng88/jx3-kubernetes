@@ -15,14 +15,12 @@ spec:
     gitServer: https://github.com
     provider: kubernetes
     registry: ghcr.io
-  ingress:
-    domain: jx-dev.inceptio.cn
   environments:
   - key: dev
-  - key: staging
-  - key: production
+  #- key: staging
+  #- key: production
   ingress:
-    domain: ""
+    domain: jx-dev.inceptio.cn
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
